@@ -1,7 +1,6 @@
-No seu controlador, você pode criar uma lista de SelectListItem e passá-la para a sua visão através de um modelo de dados. Suponha que você esteja trabalhando com uma lista de opções para selecionar uma cor:
+Na sua controller, você pode criar uma lista de SelectListItem e passá-la para a sua visão através de um modelo de dados. Suponha que você esteja trabalhando com uma lista de opções para selecionar uma categoria do produto:
 
-csharp
-Copy code
+
 public ActionResult Index()
 {
     List<SelectListItem> cores = new List<SelectListItem>
@@ -15,6 +14,7 @@ public ActionResult Index()
 
     return View();
 }
+    
 Na sua visão, você pode usar o DropDownListFor para exibir a lista suspensa usando os itens do SelectListItem. A propriedade SelectedValue define o valor selecionado por padrão (opcional):
 
 csharp
