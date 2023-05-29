@@ -1,6 +1,6 @@
 Na sua controller, você pode criar uma lista de SelectListItem e passá-la para a sua visão através de um modelo de dados. Suponha que você esteja trabalhando com uma lista de opções para selecionar uma categoria do produto:
 
-
+```csharp
 public ActionResult Index()
 {
     List<SelectListItem> cores = new List<SelectListItem>
